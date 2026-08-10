@@ -1,0 +1,32 @@
+name=input("Enter the name of the student: ")
+roll_no=input("Enter the roll number of the student:")
+
+english=int(input("Enter the marks obtained in english:"))
+maths=int(input("Enter the marks obtained in maths:"))
+science=int(input("Enter the marks obtained in science:"))
+
+
+total =english+maths+science
+Percentage = total / 300 *100
+
+print ("Student Name:",name)
+print("Roll No ",roll_no)
+print("Total Marks ",total)
+print("Percentage ",Percentage)
+
+if Percentage >=90:
+  print("Grade A")
+elif Percentage >=75:
+  print("Grade B")
+elif Percentage >=60:
+  print("Grade C")
+elif Percentage >=45:
+  print("Grade D")
+else:
+  print("Grade E")
+
+
+if Percentage >50:
+  print("PASS")
+else:
+  print("FAIL")
